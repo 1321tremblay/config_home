@@ -1,0 +1,11 @@
+alefragnani.project-manager
+astro-build.astro-vscode
+esbenp.prettier-vscode
+jdinhlife.gruvbox
+jnoortheen.nix-ide
+johnnymorganz.stylua
+kamadorueda.alejandra
+pkief.material-icon-theme
+sumneko.lua
+tamasfe.even-better-toml
+vscodevim.vim

@@ -1,0 +1,211 @@
+{
+  "nix.serverPath": "nixd",
+  "nix.enableLanguageServer": true,
+  "editor.formatOnSave": true,
+  "[nix]": {
+    "editor.defaultFormatter": "kamadorueda.alejandra"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+
+  "editor.suggest.insertMode": "replace",
+  "terminal.integrated.fontFamily": "monospace",
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0.3,
+  "launch": {},
+  "[json]": {},
+  "workbench.iconTheme": "material-icon-theme",
+  "update.showReleaseNotes": false,
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<Space>",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.handleKeys": {
+    "<C-n>": false
+  },
+
+  // UI
+  "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": false,
+
+  "editor.minimap.enabled": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "explorer.decorations.colors": false,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.glyphMargin": false,
+  "workbench.layoutControl.type": "menu",
+  "workbench.layoutControl.enabled": true,
+  "window.title": "",
+  "editor.guides.indentation": false,
+
+  "zenMode.hideLineNumbers": false,
+
+  // KEYBINDS
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    {
+      "key": "zz",
+      "command": "vim.cursorMove",
+      "args": {
+        "to": "view",
+        "by": "line",
+        "value": 0
+      }
+    },
+    // splits
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    {
+      "key": "shift+y",
+      "command": "vim.normalMode",
+      "args": {
+        "text": "yy"
+      },
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": [":x!"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "c", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    // Buffers
+    {
+      "before": ["<leader>", "tab"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["tab"],
+      "commands": [":bnext"]
+    },
+    // Files
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "f", "p"],
+      "commands": ["periscope.search"]
+    },
+    // Projects
+    {
+      "before": ["leader", "p", "f"],
+      "commands": ["projectManager.listProjects"]
+    },
+    {
+      "before": ["leader", "p", "w"],
+      "commands": ["projectManager.saveProject"]
+    },
+    {
+      "before": ["leader", "p", "q"],
+      "commands": ["workbench.action.closeFolder"]
+    },
+    {
+      "before": ["leader", "t", "o"],
+      "command": ["workbench.action.togglePanel"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    // Move selected lines while staying in visual mode
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    // toggle comment selection
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.menuBarVisibility": "toggle",
+  "workbench.sideBar.location": "right",
+  "projectManager.git.baseFolders": ["/home/olivier/projects"],
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "newUntitledFile",
+  "periscope.rgPath": "/home/olivier/.nix-profile/bin/rg",
+
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "workbench.activityBar.location": "bottom",
+  "window.customTitleBarVisibility": "never"
+}
