@@ -88,6 +88,7 @@ alias nix-shell="nix-shell --command zsh"
 alias v="nvim"
 alias t="tmux"
 
+
 #---- BAT ----
 export BAT_THEME=gruvbox-dark
 
