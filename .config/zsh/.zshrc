@@ -87,6 +87,7 @@ alias ls="eza --icons=always -1 -a --git"
 alias nix-shell="nix-shell --command zsh"
 alias v="nvim"
 alias t="tmux"
+alias npm="pnpm"
 
 
 #---- BAT ----
