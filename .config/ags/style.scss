@@ -1,0 +1,128 @@
+@use "sass:color";
+
+$bg: #212223;
+$fg: #f1f1f1;
+$accent: #378DF7;
+$radius: 7px;
+
+window.Bar {
+    font-family: "JetBrainsMono Nerd Font", "monospace";
+    font-size: 14px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 2px;
+
+    .wrapper {
+        background-color: #2b2b2b;
+        border-top: 2px solid #4c4c4c;
+        border-left: 2px solid #4c4c4c;
+        border-bottom: 2px solid #1a1a1a;
+        border-right: 2px solid #1a1a1a;
+        padding: 2px 6px;
+    }
+
+    label {
+        margin: 0 8px;
+    }
+
+    .Workspaces {
+
+        label {
+            margin: 0 3px;
+        }
+
+        button {
+            all: unset;
+            background-color: #3f3f3f;
+            border: 2px solid;
+            border-top-color: #4c4c4c;
+            border-left-color: #4c4c4c;
+            border-bottom-color: #1a1a1a;
+            border-right-color: #1a1a1a;
+            margin: 1px;
+            padding: 3px 7px;
+            color: #e0e0e0;
+            box-shadow: none;
+
+            &:hover {
+                background-color: #505050;
+                color: #ffffff;
+            }
+        }
+
+        .focused {
+
+            background-color: #3f3f3f;
+            border-top-color: #1a1a1a;
+            border-left-color: #1a1a1a;
+            border-bottom-color: #2a2a2a;
+            border-right-color: #2a2a2a;
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+        }
+    }
+
+    .SysTray {
+        margin-right: 8px;
+
+        button {
+            padding: 0 4px;
+        }
+    }
+
+    .FocusedClient {
+        color: $accent;
+    }
+
+    .Wifi {
+        padding: 0 8px;
+    }
+
+    .Media {
+        margin: 0;
+        padding: 0;
+
+        .box {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Cover {
+            background-position: center;
+            background-size: contain;
+        }
+
+    }
+
+    .Battery {
+        margin: 0;
+        padding: 0 8px;
+
+        label {
+            padding-left: 4px;
+            margin: 0;
+        }
+
+    }
+
+    .AudioSlider {
+        margin: 0;
+        padding: 0 8px;
+    }
+
+    .Time {
+        margin: 0;
+        padding: 0 8px;
+    }
+
+    .sunken {
+        background-color: #3f3f3f;
+        border-top: 3px solid #1a1a1a;
+        border-left: 3px solid #1a1a1a;
+        border-bottom: 3px solid #2a2a2a;
+        border-right: 3px solid #2a2a2a;
+        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+        padding: 0 6px;
+    }
+
+}
